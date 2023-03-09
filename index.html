@@ -9,4 +9,18 @@
 <body>
     fsdfsdf
 </body>
+<script>
+    var person = {
+        firstName: "John",
+        lastName: "Doe",
+        fullName: function(a){
+            a();
+        }
+    }
+    function a(){
+        () =>  this.firstName + " " + this.lastName;
+        
+    }
+    console.log(person.fullName(a)); // "undefined undefined"
+</script>
 </html>
